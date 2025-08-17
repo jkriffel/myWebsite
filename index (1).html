@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>James Riffel — Data Science & Engineering</title>
+  <meta name="description" content="Portfolio of James Riffel — Data Science and Engineering: Driving Business Outcomes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: { brand: { DEFAULT: '#2563eb', dark: '#1d4ed8' } },
+          boxShadow: { glow: '0 10px 30px rgba(37,99,235,0.25)' }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient { background: radial-gradient(80% 80% at 50% 20%, rgba(37,99,235,0.12), transparent 60%), linear-gradient(180deg, rgba(37,99,235,0.06), transparent 30%); }
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.6); }
+    .dark .glass { background: rgba(17,24,39,0.5); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-950 dark:text-gray-100">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-gray-200/60 dark:border-gray-800/60 bg-white/80 dark:bg-gray-950/70 backdrop-blur">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#home" class="font-extrabold tracking-tight text-xl">James Kirby Riffel VI<span class="text-brand">.</span></a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#about" class="hover:text-brand">About</a>
+        <a href="#skills" class="hover:text-brand">Skills</a>
+        <a href="#projects" class="hover:text-brand">Projects</a>
+        <a href="#experience" class="hover:text-brand">Experience</a>
+        <a href="#education" class="hover:text-brand">Education</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="resume.pdf" class="hidden sm:inline-flex items-center rounded-xl border border-gray-200 dark:border-gray-800 px-3 py-1.5 hover:shadow-glow transition">
+          <span>Resume</span>
+        </a>
+        <button id="themeToggle" class="inline-flex items-center justify-center w-9 h-9 rounded-xl border border-gray-200 dark:border-gray-800" aria-label="Toggle theme">
+          <svg id="sun" class="w-5 h-5 block dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v2M12 19v2M21 12h-2M5 12H3M18.364 5.636l-1.414 1.414M7.05 16.95l-1.414 1.414M18.364 18.364l-1.414-1.414M7.05 7.05L5.636 5.636"/><circle cx="12" cy="12" r="4"/></svg>
+          <svg id="moon" class="w-5 h-5 hidden dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative gradient">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="inline-flex items-center text-xs uppercase tracking-widest font-semibold text-brand mb-4">Driving Business Outcomes with Data</p>
+          <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight">Data Science and Engineering:<br class="hidden sm:block"/> Driving Effective Decisions</h1>
+          <p class="mt-5 text-lg text-gray-600 dark:text-gray-300 max-w-prose">I am a data science and engineering professional focused on <strong>machine learning</strong>, <strong>AI</strong>, and <strong>analytics</strong>. At Simmons Foods, I design and implement ML-driven solutions to optimize procurement and operations. Through MIT Professional Education, I am deepening expertise in leveraging AI for effective decision-making. My work blends statistics, modeling, and engineering to create business impact.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#projects" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-brand text-white font-semibold hover:bg-brand-dark shadow-glow">View Projects</a>
+          </div>
+          <div class="mt-6 text-sm text-gray-500 dark:text-gray-400">
+            <span>Python • SQL • ML • AI • Data Engineering • Statistics • Modeling</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="glass rounded-3xl p-1.5 shadow-2xl border border-white/40 dark:border-white/10">
+            <img src="my-photo.jpg" alt="James Riffel" class="rounded-2xl" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-10 items-start">
+        <div class="lg:col-span-1">
+          <h2 class="text-2xl md:text-3xl font-extrabold">About</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Procurement Analyst based in Northwest Arkansas driving real decision using AI/ML with Analytics. Bachelors in Computer Science and Biomedical Engineering from the University of Arkansas. Focused on advanced data science and engineering to improve business outcomes by building pipelines, predictive models, and data platforms that drive smarter decisions.</p>
+        </div>
+        <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+          <div class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+            <h3 class="font-bold mb-2">Focus Areas</h3>
+            <p class="text-gray-600 dark:text-gray-300">Machine learning, Reporting Analytics, Data Engineering, and Statiscal Modeling.</p>
+          </div>
+          <div class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+            <h3 class="font-bold mb-2">Recent highlights</h3>
+            <ul class="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-1">
+              <li>Developed ML pipelines for cost forecasting and sensitivity analysis.</li>
+              <li>Applied AI methods to identify procurement risks and optimize sourcing.</li>
+              <li>Built data engineering workflows enabling real-time KPI dashboards.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-100/60 dark:bg-gray-900/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-8">Skills</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <h3 class="font-semibold">Core</h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">Python, SQL, Machine Learning, AI, Data Engineering, Statistics, Modeling</p>
+        </div>
+        <div class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <h3 class="font-semibold">ML & AI Frameworks</h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">scikit-learn, TensorFlow, PyTorch, MLflow</p>
+        </div>
+        <div class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <h3 class="font-semibold">Data Engineering Tools</h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">ETL pipelines, APIs, AWS (S3, Lambda), Relational Databases</p>
+        </div>
+        <div class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <h3 class="font-semibold">Visualization & BI</h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">Tableau, Power BI, Seaborn</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-8">Experience</h2>
+      <div class="space-y-6">
+        <article class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-bold">Procurement Analyst</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">Simmons Foods · Northwest Arkansas</p>
+            </div>
+            <span class="text-xs px-2 py-1 rounded-lg bg-gray-100 dark:bg-gray-800">Current</span>
+          </div>
+          <ul class="mt-3 text-gray-700 dark:text-gray-300 list-disc pl-5 space-y-1">
+            <li>Implement ML models to forecast costs and optimize supplier decisions.</li>
+            <li>Engineer data pipelines and deploy AI tools to track procurement KPIs.</li>
+            <li>Apply WPS/continuous improvement with data science insights to cut losses.</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-bold">Software Engineer (AI), Contractor</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">Outlier.AI</p>
+            </div>
+            <span class="text-xs px-2 py-1 rounded-lg bg-gray-100 dark:bg-gray-800">Past</span>
+          </div>
+          <ul class="mt-3 text-gray-700 dark:text-gray-300 list-disc pl-5 space-y-1">
+            <li>Validated AI features under tight deadlines in a cross-functional team.</li>
+            <li>Partnered with clients to refine ML solutions and deliver rapid iterations.</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-bold">Engineering Intern</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">Simmons Pet Foods</p>
+            </div>
+            <span class="text-xs px-2 py-1 rounded-lg bg-gray-100 dark:bg-gray-800">Past</span>
+          </div>
+          <ul class="mt-3 text-gray-700 dark:text-gray-300 list-disc pl-5 space-y-1">
+            <li>Applied data-driven methods to maintain production throughput and quality.</li>
+            <li>Gathered insights for optimizing processes and reducing variance.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-20 bg-gray-100/60 dark:bg-gray-900/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-8">Education</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <h3 class="font-bold">B.S. Biomedical Engineering</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">University of Arkansas, Fayetteville — May 2024</p>
+        </article>
+        <article class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <h3 class="font-bold">B.A. Computer Science</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">University of Arkansas, Fayetteville — Expected May 2026</p>
+        </article>
+        <article class="rounded-2xl p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+          <h3 class="font-bold">Applied Data Science: Leverage AI for Effective Decision Making</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">MIT Professional Education</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between mb-8">
+          <h2 class="text-2xl md:text-3xl font-extrabold">Selected Projects</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          
+          <!-- Project 1 -->
+          <article class="group rounded-2xl p-5 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:shadow-glow transition">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-bold">Chicago Housing Price Prediction Model</h3>
+              <span class="text-xs px-2 py-1 rounded-lg bg-gray-100 dark:bg-gray-800">ML</span>
+            </div>
+            <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">MIT Applied Data Science Capstone</p>
+            <ul class="mt-3 text-gray-600 dark:text-gray-300 list-disc pl-5 space-y-1 text-sm">
+              <li>Built ML pipeline using Gradient Boosting, Random Forest, and Linear Regression achieving 88% accuracy within $2,700.</li>
+              <li>Deployed production model with Pandas and Scikit-learn for real estate valuation and market analysis.</li>
+            </ul>
+          </article>
+  
+          <!-- Project 2 -->
+          <article class="group rounded-2xl p-5 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:shadow-glow transition">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-bold">Biomedical Image Processing for Cancer Detection</h3>
+              <span class="text-xs px-2 py-1 rounded-lg bg-gray-100 dark:bg-gray-800">AI</span>
+            </div>
+            <ul class="mt-3 text-gray-600 dark:text-gray-300 list-disc pl-5 space-y-1 text-sm">
+              <li>Created decision tree and neural network classifiers in MATLAB for medical imaging cancer detection.</li>
+              <li>Implemented image processing algorithms and statistical modeling for biomedical pattern recognition applications.</li>
+            </ul>
+          </article>
+  
+          <!-- Project 3 -->
+          <article class="group rounded-2xl p-5 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:shadow-glow transition">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-bold">Arkansas Healthcare Database Web Application</h3>
+              <span class="text-xs px-2 py-1 rounded-lg bg-gray-100 dark:bg-gray-800">Full-Stack</span>
+            </div>
+            <ul class="mt-3 text-gray-600 dark:text-gray-300 list-disc pl-5 space-y-1 text-sm">
+              <li>Designed full-stack platform using TypeScript, Angular, Node.js, PostgreSQL on Azure with location-based querying.</li>
+              <li>Built scalable database architecture supporting statewide healthcare data access for Arkansas residents.</li>
+            </ul>
+          </article>
+  
+          <!-- Project 4 -->
+          <article class="group rounded-2xl p-5 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:shadow-glow transition">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-bold">Thermodynamic Modeling and Statistical Analysis</h3>
+              <span class="text-xs px-2 py-1 rounded-lg bg-gray-100 dark:bg-gray-800">Modeling</span>
+            </div>
+            <ul class="mt-3 text-gray-600 dark:text-gray-300 list-disc pl-5 space-y-1 text-sm">
+              <li>Created MATLAB, R, and Python models for thermodynamic analysis and biostatistical healthcare data modeling.</li>
+              <li>Applied numerical methods and statistical inferencing for biomedical modeling and data-driven decision making.</li>
+            </ul>
+          </article>
+  
+        </div>
+      </div>
+    </section>
+  
+
+</body>
+</html>
